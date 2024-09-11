@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Bookmarks</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Bookmark Alias Manager</h1>
+
+    <div id="new-bookmark-container" class="form-group">
+      <input type="text" id="new-keyword" placeholder="Keyword" class="input-field">
+      <input type="text" id="new-url" placeholder="URL" class="input-field">
+      <button id="add" class="btn">Add New Bookmark</button>
+    </div>
+
+    <div id="bookmark-list-container">
+      <ul id="bookmark-list">
+        <!-- Existing shortcuts will be dynamically inserted here -->
+      </ul>
+    </div>
+
+    <div id="save-container" class="form-group">
+      <button id="save-all" class="btn">Save All Changes</button>
+      <div id="save-confirmation">Changes saved successfully!</div>
+    </div>
+  </div>
+
+  <script src="/dist/popup/popup.js"></script>
+</body>
+
+</html>
